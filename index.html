@@ -1,1 +1,80 @@
+/* Configurações Gerais */
+body {
+    margin: 0;
+    font-family: "Chakra Petch", sans-serif;
+    background-color: #111116; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+}
 
+/* Cabeçalho */
+header {
+    border-bottom: solid 2px #db2e2e; /* Linha vermelha estilosa */
+    padding: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #db2e2e;
+    letter-spacing: 2px;
+}
+
+/* Seção de Destaque (Chamada) */
+.chamada {
+    background: linear-gradient(to bottom, #1c1c24, #111116);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ajusta para telas menores */
+}
+
+.chamada-texto h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.chamada-texto p {
+    font-size: 18px;
+    color: #a0a0a5;
+}
+
+/* Seção de Categorias (Carrossel de Vídeos) */
+.categoria {
+    padding: 30px 20px;
+}
+
+.categoria h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.categoria-videos {
+    display: flex;
+    overflow-x: auto; /* Permite rolar para os lados se houver muitos vídeos */
+    gap: 15px;
+    padding-bottom: 10px;
+}
+
+/* Estilização das Capas dos Vídeos */
+.categoria-videos img {
+    opacity: 0.7;
+    height: 200px;
+    border-radius: 8px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Efeito de passar o mouse por cima (Hover) */
+.categoria-videos img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+    cursor: pointer;
+    border: 2px solid #db2e2e;
+}
+
+/* Esconder a barra de rolagem horizontal feia no Chrome/Safari, mantendo a função */
+.categoria-videos::-webkit-scrollbar {
+    height: 6px;
+}
+.categoria-videos::-webkit-scrollbar-thumb {
+    background: #db2e2e;
+    border-radius: 10px;
+}
